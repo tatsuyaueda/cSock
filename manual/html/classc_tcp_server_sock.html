@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>cSock: クラス cTcpServerSock</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.1-p1 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>メインページ</span></a></li>
+    <li id="current"><a href="annotated.html"><span>クラス</span></a></li>
+    <li><a href="files.html"><span>ファイル</span></a></li>
+    <li><a href="pages.html"><span>関連ページ</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>構成</span></a></li>
+    <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+    <li><a href="functions.html"><span>構成メンバ</span></a></li>
+  </ul></div>
+<h1>クラス cTcpServerSock</h1><!-- doxytag: class="cTcpServerSock" -->TCP Serverソケットクラス  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;cTcpServerSock.h&gt;</code>
+<p>
+<a class="el" href="classc_ssl_server_sock.html">cSslServerSock</a>に継承されています。
+<p>
+<a href="classc_tcp_server_sock-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#10c9f626cf6b6875fed78ef16c2ef164">cTcpServerSock</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ  <a href="#10c9f626cf6b6875fed78ef16c2ef164"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#5891fe36ef18a65b4e2deec858301b4c">~cTcpServerSock</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ  <a href="#5891fe36ef18a65b4e2deec858301b4c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#7132db13445ccce249250f7772d21f2a">IsListening</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">サーバが待ち受けを行っているか確認します。  <a href="#7132db13445ccce249250f7772d21f2a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#4cde0d9a92d7d4215dba91d13c25534e">Listen</a> (USHORT, HWND, USHORT)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">待ち受けを開始します。  <a href="#4cde0d9a92d7d4215dba91d13c25534e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#9db46a38a1d76a67a9e00fdb52387c3a">Accept</a> (<a class="el" href="classc_tcp_sock.html">cTcpSock</a> *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">TCPソケットの接続要求を受け入れます。  <a href="#9db46a38a1d76a67a9e00fdb52387c3a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#2b59f020a4196d627644ab0dc050ccc8">CloseListen</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">待ち受けを終了します。  <a href="#2b59f020a4196d627644ab0dc050ccc8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#e36a6d687062223a9d5ac67f3d07008b">SetAsync</a> (HWND, USHORT)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">非同期モードの設定を行います。  <a href="#e36a6d687062223a9d5ac67f3d07008b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#39ce99a87afdd9589643a936ebf2c3ed">ErrMsgBox</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">エラーメッセージの表示をします。  <a href="#39ce99a87afdd9589643a936ebf2c3ed"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Protected 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#e5dcabb6bbc01d55d325b768d00c62e2">m_bIsListening</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">待ち受けフラグ  <a href="#e5dcabb6bbc01d55d325b768d00c62e2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SOCKADDR_IN&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#cd5bf3fe2b926e44a7c114d702c3a89a">m_ServerAddr</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">サーバソケットのアドレス情報  <a href="#cd5bf3fe2b926e44a7c114d702c3a89a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SOCKET&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#1f475a1a63159ec35aee34169bc1fe46">m_ServerSocket</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">サーバソケットハンドル  <a href="#1f475a1a63159ec35aee34169bc1fe46"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_tcp_server_sock.html#e8b19b6ef176e97cd2d8f5f8874dea5f">m_szErrMsg</a> [2048]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">エラーメッセージ  <a href="#e8b19b6ef176e97cd2d8f5f8874dea5f"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+TCP Serverソケットクラス 
+<p>
+TCP通信のサーバ機能を実装しているクラスです。 
+<p>
+<hr><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" name="10c9f626cf6b6875fed78ef16c2ef164"></a><!-- doxytag: member="cTcpServerSock::cTcpServerSock" ref="10c9f626cf6b6875fed78ef16c2ef164" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cTcpServerSock::cTcpServerSock           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+コンストラクタ 
+<p>
+クラスの初期化を行います。 
+</div>
+</div><p>
+<a class="anchor" name="5891fe36ef18a65b4e2deec858301b4c"></a><!-- doxytag: member="cTcpServerSock::~cTcpServerSock" ref="5891fe36ef18a65b4e2deec858301b4c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cTcpServerSock::~cTcpServerSock           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+デストラクタ 
+<p>
+クラスの解放を行います。 
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="7132db13445ccce249250f7772d21f2a"></a><!-- doxytag: member="cTcpServerSock::IsListening" ref="7132db13445ccce249250f7772d21f2a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cTcpServerSock::IsListening           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+サーバが待ち受けを行っているか確認します。 
+<p>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>待ち受けを行っている場合にはTRUEを返す。 待ち受けを行っていない場合にはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="4cde0d9a92d7d4215dba91d13c25534e"></a><!-- doxytag: member="cTcpServerSock::Listen" ref="4cde0d9a92d7d4215dba91d13c25534e" args="(USHORT, HWND, USHORT)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cTcpServerSock::Listen           </td>
+          <td>(</td>
+          <td class="paramtype">USHORT&nbsp;</td>
+          <td class="paramname"> <em>nPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HWND&nbsp;</td>
+          <td class="paramname"> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&nbsp;</td>
+          <td class="paramname"> <em>nEventNo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+待ち受けを開始します。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nPort</em>&nbsp;</td><td>待ち受けを行うポート番号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hWnd</em>&nbsp;</td><td>非同期モードで利用する場合は、通知先のウィンドウハンドル<br>
+ 同期モードで利用する場合はNULL </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nEventNo</em>&nbsp;</td><td>非同期モードで利用する場合は、通知するメッセージID<br>
+ 同期モードで利用する場合はNULL </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9db46a38a1d76a67a9e00fdb52387c3a"></a><!-- doxytag: member="cTcpServerSock::Accept" ref="9db46a38a1d76a67a9e00fdb52387c3a" args="(cTcpSock *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cTcpServerSock::Accept           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classc_tcp_sock.html">cTcpSock</a> *&nbsp;</td>
+          <td class="paramname"> <em>oTcpSock</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+TCPソケットの接続要求を受け入れます。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>oTcpSock</em>&nbsp;</td><td>cTcpSockのオブジェクトポインタ </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="2b59f020a4196d627644ab0dc050ccc8"></a><!-- doxytag: member="cTcpServerSock::CloseListen" ref="2b59f020a4196d627644ab0dc050ccc8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cTcpServerSock::CloseListen           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+待ち受けを終了します。 
+<p>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e36a6d687062223a9d5ac67f3d07008b"></a><!-- doxytag: member="cTcpServerSock::SetAsync" ref="e36a6d687062223a9d5ac67f3d07008b" args="(HWND, USHORT)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cTcpServerSock::SetAsync           </td>
+          <td>(</td>
+          <td class="paramtype">HWND&nbsp;</td>
+          <td class="paramname"> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&nbsp;</td>
+          <td class="paramname"> <em>nEventNo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+非同期モードの設定を行います。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hWnd</em>&nbsp;</td><td>非同期モードで利用する場合は、通知先のウィンドウハンドル<br>
+ 同期モードで利用する場合はNULL </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nEventNo</em>&nbsp;</td><td>非同期モードで利用する場合は、通知するメッセージID<br>
+ 同期モードで利用する場合はNULL </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="39ce99a87afdd9589643a936ebf2c3ed"></a><!-- doxytag: member="cTcpServerSock::ErrMsgBox" ref="39ce99a87afdd9589643a936ebf2c3ed" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cTcpServerSock::ErrMsgBox           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+エラーメッセージの表示をします。 
+<p>
+
+</div>
+</div><p>
+<hr><h2>変数</h2>
+<a class="anchor" name="e5dcabb6bbc01d55d325b768d00c62e2"></a><!-- doxytag: member="cTcpServerSock::m_bIsListening" ref="e5dcabb6bbc01d55d325b768d00c62e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL <a class="el" href="classc_tcp_server_sock.html#e5dcabb6bbc01d55d325b768d00c62e2">cTcpServerSock::m_bIsListening</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+待ち受けフラグ 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cd5bf3fe2b926e44a7c114d702c3a89a"></a><!-- doxytag: member="cTcpServerSock::m_ServerAddr" ref="cd5bf3fe2b926e44a7c114d702c3a89a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKADDR_IN <a class="el" href="classc_tcp_server_sock.html#cd5bf3fe2b926e44a7c114d702c3a89a">cTcpServerSock::m_ServerAddr</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+サーバソケットのアドレス情報 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="1f475a1a63159ec35aee34169bc1fe46"></a><!-- doxytag: member="cTcpServerSock::m_ServerSocket" ref="1f475a1a63159ec35aee34169bc1fe46" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKET <a class="el" href="classc_tcp_server_sock.html#1f475a1a63159ec35aee34169bc1fe46">cTcpServerSock::m_ServerSocket</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+サーバソケットハンドル 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e8b19b6ef176e97cd2d8f5f8874dea5f"></a><!-- doxytag: member="cTcpServerSock::m_szErrMsg" ref="e8b19b6ef176e97cd2d8f5f8874dea5f" args="[2048]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="classc_tcp_server_sock.html#e8b19b6ef176e97cd2d8f5f8874dea5f">cTcpServerSock::m_szErrMsg</a>[2048]<code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+エラーメッセージ 
+<p>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li><a class="el" href="c_tcp_server_sock_8h.html">cTcpServerSock.h</a><li><a class="el" href="c_tcp_server_sock_8cpp.html">cTcpServerSock.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>cSockに対してThu Mar 1 18:22:34 2007に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.1-p1 </small></address>
+</body>
+</html>

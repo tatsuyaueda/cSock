@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>cSock: クラス cWinSock</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.1-p1 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>メインページ</span></a></li>
+    <li id="current"><a href="annotated.html"><span>クラス</span></a></li>
+    <li><a href="files.html"><span>ファイル</span></a></li>
+    <li><a href="pages.html"><span>関連ページ</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>構成</span></a></li>
+    <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+    <li><a href="functions.html"><span>構成メンバ</span></a></li>
+  </ul></div>
+<h1>クラス cWinSock</h1><!-- doxytag: class="cWinSock" -->Windowsソケットクラス  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;cWinSock.h&gt;</code>
+<p>
+<a href="classc_win_sock-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#2a71699f2b7579dea4a2c58b7ae42f1f">cWinSock</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ  <a href="#2a71699f2b7579dea4a2c58b7ae42f1f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#07c940a5fe283864685d1418663dd9ad">~cWinSock</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ  <a href="#07c940a5fe283864685d1418663dd9ad"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#13aaf49a206f9cb5c0b22f60a2013ab6">Startup</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Windowsソケットの初期化をします。  <a href="#13aaf49a206f9cb5c0b22f60a2013ab6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#df7ea14789e837ae21545647bfe1f981">Release</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Windowsソケットの解放をします。  <a href="#df7ea14789e837ae21545647bfe1f981"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#45dfb5a04c6af0270d37a51baaf06461">ErrMsgBox</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">エラーメッセージの表示をします。  <a href="#45dfb5a04c6af0270d37a51baaf06461"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Private 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">WSADATA&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#1e831ff88b7678223cb7367e90c9351a">m_wsadata</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Windowsソケットのデータ  <a href="#1e831ff88b7678223cb7367e90c9351a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#5f2ad83a80f82ac87a26b92ed13a2a0a">m_bStartUp</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Windowsソケットが初期化フラグ  <a href="#5f2ad83a80f82ac87a26b92ed13a2a0a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_win_sock.html#12b552db1e7880ae08006a07c4e6b140">m_szErrMsg</a> [2048]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">エラーメッセージ  <a href="#12b552db1e7880ae08006a07c4e6b140"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+Windowsソケットクラス 
+<p>
+Windowsソケットの初期化・解放を実装しているクラスです。 
+<p>
+<hr><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" name="2a71699f2b7579dea4a2c58b7ae42f1f"></a><!-- doxytag: member="cWinSock::cWinSock" ref="2a71699f2b7579dea4a2c58b7ae42f1f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cWinSock::cWinSock           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+コンストラクタ 
+<p>
+クラスの初期化を行います。 
+</div>
+</div><p>
+<a class="anchor" name="07c940a5fe283864685d1418663dd9ad"></a><!-- doxytag: member="cWinSock::~cWinSock" ref="07c940a5fe283864685d1418663dd9ad" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cWinSock::~cWinSock           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+デストラクタ 
+<p>
+クラスの解放を行います。 
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="13aaf49a206f9cb5c0b22f60a2013ab6"></a><!-- doxytag: member="cWinSock::Startup" ref="13aaf49a206f9cb5c0b22f60a2013ab6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cWinSock::Startup           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Windowsソケットの初期化をします。 
+<p>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="df7ea14789e837ae21545647bfe1f981"></a><!-- doxytag: member="cWinSock::Release" ref="df7ea14789e837ae21545647bfe1f981" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cWinSock::Release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Windowsソケットの解放をします。 
+<p>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="45dfb5a04c6af0270d37a51baaf06461"></a><!-- doxytag: member="cWinSock::ErrMsgBox" ref="45dfb5a04c6af0270d37a51baaf06461" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cWinSock::ErrMsgBox           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+エラーメッセージの表示をします。 
+<p>
+
+</div>
+</div><p>
+<hr><h2>変数</h2>
+<a class="anchor" name="1e831ff88b7678223cb7367e90c9351a"></a><!-- doxytag: member="cWinSock::m_wsadata" ref="1e831ff88b7678223cb7367e90c9351a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WSADATA <a class="el" href="classc_win_sock.html#1e831ff88b7678223cb7367e90c9351a">cWinSock::m_wsadata</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Windowsソケットのデータ 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="5f2ad83a80f82ac87a26b92ed13a2a0a"></a><!-- doxytag: member="cWinSock::m_bStartUp" ref="5f2ad83a80f82ac87a26b92ed13a2a0a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL <a class="el" href="classc_win_sock.html#5f2ad83a80f82ac87a26b92ed13a2a0a">cWinSock::m_bStartUp</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Windowsソケットが初期化フラグ 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="12b552db1e7880ae08006a07c4e6b140"></a><!-- doxytag: member="cWinSock::m_szErrMsg" ref="12b552db1e7880ae08006a07c4e6b140" args="[2048]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="classc_win_sock.html#12b552db1e7880ae08006a07c4e6b140">cWinSock::m_szErrMsg</a>[2048]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+エラーメッセージ 
+<p>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li><a class="el" href="c_win_sock_8h.html">cWinSock.h</a><li><a class="el" href="c_win_sock_8cpp.html">cWinSock.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>cSockに対してThu Mar 1 18:22:34 2007に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.1-p1 </small></address>
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS">
+<title>cSock: クラス cUdpSock</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 作成： Doxygen 1.5.1-p1 -->
+<div class="tabs">
+  <ul>
+    <li><a href="index.html"><span>メインページ</span></a></li>
+    <li id="current"><a href="annotated.html"><span>クラス</span></a></li>
+    <li><a href="files.html"><span>ファイル</span></a></li>
+    <li><a href="pages.html"><span>関連ページ</span></a></li>
+  </ul></div>
+<div class="tabs">
+  <ul>
+    <li><a href="annotated.html"><span>構成</span></a></li>
+    <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+    <li><a href="functions.html"><span>構成メンバ</span></a></li>
+  </ul></div>
+<h1>クラス cUdpSock</h1><!-- doxytag: class="cUdpSock" -->UDPソケットクラス  
+<a href="#_details">[詳細]</a>
+<p>
+<code>#include &lt;cUdpSock.h&gt;</code>
+<p>
+<a href="classc_udp_sock-members.html">すべてのメンバ一覧</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#92c5053f155a9568618e750891284b7b">cUdpSock</a> (LPCSTR, USHORT)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ(データ送信側)  <a href="#92c5053f155a9568618e750891284b7b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#af311190991e932ec4fc5fd8beb9e323">cUdpSock</a> (USHORT, HWND, USHORT)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コンストラクタ(データ受信側)  <a href="#af311190991e932ec4fc5fd8beb9e323"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#280c27b23fe8fd0b6c1eb5c0f57e5682">~cUdpSock</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">デストラクタ  <a href="#280c27b23fe8fd0b6c1eb5c0f57e5682"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#cd23a026c3f2e0c5b83fda9b82e4c0a7">SendData</a> (LPVOID, DWORD)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">データの送信を行います。  <a href="#cd23a026c3f2e0c5b83fda9b82e4c0a7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#c95591a8fa01b9abe49e0cbba94c6612">SendStr</a> (LPCSTR)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">文字列を送信します。  <a href="#c95591a8fa01b9abe49e0cbba94c6612"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#35037fcf1cca2fe20237d5db26d00f3b">RecvData</a> (LPVOID, DWORD, DWORD *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定されたバイト数データの受信を行います。  <a href="#35037fcf1cca2fe20237d5db26d00f3b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#62ac0fe748d7c1274396178717b127ea">RecvDataOnce</a> (LPVOID, DWORD, DWORD *)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">受信できるだけデータの受信を行います。  <a href="#62ac0fe748d7c1274396178717b127ea"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#9978a25ed37b08c7f1dcf1e90316647d">MatchSock</a> (SOCKET)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">引数のソケットハンドルと同一のソケットか判定する。  <a href="#9978a25ed37b08c7f1dcf1e90316647d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">LPCSTR&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#5a595ed839ebee596c547980d5b10902">GetPeerIpAddress</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接続先ホストのIPアドレスを取得します。  <a href="#5a595ed839ebee596c547980d5b10902"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">USHORT&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#8701173dc55f502585bd5752a44850ca">GetPeerPort</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接続先ホストのポート番号を取得します。  <a href="#8701173dc55f502585bd5752a44850ca"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#08bf7fd221f14dff3fdd64bbd4e39360">ErrMsgBox</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">エラーメッセージの表示をします。  <a href="#08bf7fd221f14dff3fdd64bbd4e39360"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Private メソッド</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#2e2fe996ab4d86b863ab0d30f0f7d703">_InitSock</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ソケットの初期化を行います。  <a href="#2e2fe996ab4d86b863ab0d30f0f7d703"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Private 変数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SOCKADDR_IN&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#43bbeadc9ebf13a0e2c13c1c31887834">m_Addr</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ソケットのアドレス情報  <a href="#43bbeadc9ebf13a0e2c13c1c31887834"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SOCKADDR_IN&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#d6629ca208cb71fafd408a009324285d">m_AddrPeer</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接続先ホストのアドレス情報  <a href="#d6629ca208cb71fafd408a009324285d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">SOCKET&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#a3d8516199551bd78546fe83292e5bc3">m_Socket</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ソケットハンドル  <a href="#a3d8516199551bd78546fe83292e5bc3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc_udp_sock.html#dc3a59810395f625ebd9cfc09cf26f7e">m_szErrMsg</a> [2048]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">エラーメッセージ  <a href="#dc3a59810395f625ebd9cfc09cf26f7e"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>説明</h2>
+UDPソケットクラス 
+<p>
+UDP通信を実装しているクラスです。 
+<p>
+<hr><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" name="92c5053f155a9568618e750891284b7b"></a><!-- doxytag: member="cUdpSock::cUdpSock" ref="92c5053f155a9568618e750891284b7b" args="(LPCSTR, USHORT)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cUdpSock::cUdpSock           </td>
+          <td>(</td>
+          <td class="paramtype">LPCSTR&nbsp;</td>
+          <td class="paramname"> <em>szHost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&nbsp;</td>
+          <td class="paramname"> <em>nPort</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+コンストラクタ(データ送信側) 
+<p>
+データを送信する側としてクラスの初期化を行います。 <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>szHost</em>&nbsp;</td><td>接続先ホストのホスト名またはIPアドレス </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nPort</em>&nbsp;</td><td>接続先ホストのポート番号 </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="af311190991e932ec4fc5fd8beb9e323"></a><!-- doxytag: member="cUdpSock::cUdpSock" ref="af311190991e932ec4fc5fd8beb9e323" args="(USHORT, HWND, USHORT)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cUdpSock::cUdpSock           </td>
+          <td>(</td>
+          <td class="paramtype">USHORT&nbsp;</td>
+          <td class="paramname"> <em>nPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HWND&nbsp;</td>
+          <td class="paramname"> <em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&nbsp;</td>
+          <td class="paramname"> <em>nEventNo</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+コンストラクタ(データ受信側) 
+<p>
+データを受信する側としてクラスの初期化を行います。 <dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nPort</em>&nbsp;</td><td>待ち受けを行うポート番号 </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>hWnd</em>&nbsp;</td><td>非同期モードで利用する場合は、通知先のウィンドウハンドル<br>
+ 同期モードで利用する場合はNULL </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>nEventNo</em>&nbsp;</td><td>非同期モードで利用する場合は、通知するメッセージID<br>
+ 同期モードで利用する場合はNULL </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="280c27b23fe8fd0b6c1eb5c0f57e5682"></a><!-- doxytag: member="cUdpSock::~cUdpSock" ref="280c27b23fe8fd0b6c1eb5c0f57e5682" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cUdpSock::~cUdpSock           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+デストラクタ 
+<p>
+クラスの解放を行います。 
+</div>
+</div><p>
+<hr><h2>関数</h2>
+<a class="anchor" name="cd23a026c3f2e0c5b83fda9b82e4c0a7"></a><!-- doxytag: member="cUdpSock::SendData" ref="cd23a026c3f2e0c5b83fda9b82e4c0a7" args="(LPVOID, DWORD)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cUdpSock::SendData           </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&nbsp;</td>
+          <td class="paramname"> <em>lpData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&nbsp;</td>
+          <td class="paramname"> <em>dwBytes</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+データの送信を行います。 
+<p>
+指定されたバイト数、送信するまで処理はブロッキングされます。<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lpData</em>&nbsp;</td><td>送信するデータの先頭ポインタ </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dwBytes</em>&nbsp;</td><td>送信するデータのバイト数 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="c95591a8fa01b9abe49e0cbba94c6612"></a><!-- doxytag: member="cUdpSock::SendStr" ref="c95591a8fa01b9abe49e0cbba94c6612" args="(LPCSTR)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cUdpSock::SendStr           </td>
+          <td>(</td>
+          <td class="paramtype">LPCSTR&nbsp;</td>
+          <td class="paramname"> <em>szStr</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+文字列を送信します。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>szStr</em>&nbsp;</td><td>送信する文字列 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="35037fcf1cca2fe20237d5db26d00f3b"></a><!-- doxytag: member="cUdpSock::RecvData" ref="35037fcf1cca2fe20237d5db26d00f3b" args="(LPVOID, DWORD, DWORD *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cUdpSock::RecvData           </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&nbsp;</td>
+          <td class="paramname"> <em>lpBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&nbsp;</td>
+          <td class="paramname"> <em>dwBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD *&nbsp;</td>
+          <td class="paramname"> <em>pdwRecvLen</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+指定されたバイト数データの受信を行います。 
+<p>
+指定されたバイト数、受信するまで処理はブロッキングされます。<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lpBuffer</em>&nbsp;</td><td>受信したデータを格納する先頭ポインタ </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dwBytes</em>&nbsp;</td><td>格納先のバイト数 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>pdwRecvLen</em>&nbsp;</td><td>実際に受信したバイト数 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="62ac0fe748d7c1274396178717b127ea"></a><!-- doxytag: member="cUdpSock::RecvDataOnce" ref="62ac0fe748d7c1274396178717b127ea" args="(LPVOID, DWORD, DWORD *)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cUdpSock::RecvDataOnce           </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&nbsp;</td>
+          <td class="paramname"> <em>lpBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&nbsp;</td>
+          <td class="paramname"> <em>dwBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD *&nbsp;</td>
+          <td class="paramname"> <em>pdwRecvLen</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+受信できるだけデータの受信を行います。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>lpBuffer</em>&nbsp;</td><td>受信したデータを格納する先頭ポインタ </td></tr>
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>dwBytes</em>&nbsp;</td><td>格納先のバイト数 </td></tr>
+    <tr><td valign="top"><tt>[out]</tt>&nbsp;</td><td valign="top"><em>pdwRecvLen</em>&nbsp;</td><td>実際に受信したバイト数 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="9978a25ed37b08c7f1dcf1e90316647d"></a><!-- doxytag: member="cUdpSock::MatchSock" ref="9978a25ed37b08c7f1dcf1e90316647d" args="(SOCKET)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cUdpSock::MatchSock           </td>
+          <td>(</td>
+          <td class="paramtype">SOCKET&nbsp;</td>
+          <td class="paramname"> <em>sock</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+引数のソケットハンドルと同一のソケットか判定する。 
+<p>
+<dl compact><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"><tt>[in]</tt>&nbsp;</td><td valign="top"><em>sock</em>&nbsp;</td><td>判定対象のソケットハンドル </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>一致したときはTRUEを返す。 一致しなかったときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="5a595ed839ebee596c547980d5b10902"></a><!-- doxytag: member="cUdpSock::GetPeerIpAddress" ref="5a595ed839ebee596c547980d5b10902" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPCSTR cUdpSock::GetPeerIpAddress           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+接続先ホストのIPアドレスを取得します。 
+<p>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>接続先ホストのIPアドレス </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="8701173dc55f502585bd5752a44850ca"></a><!-- doxytag: member="cUdpSock::GetPeerPort" ref="8701173dc55f502585bd5752a44850ca" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT cUdpSock::GetPeerPort           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+接続先ホストのポート番号を取得します。 
+<p>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>接続先ホストのポート番号 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="08bf7fd221f14dff3fdd64bbd4e39360"></a><!-- doxytag: member="cUdpSock::ErrMsgBox" ref="08bf7fd221f14dff3fdd64bbd4e39360" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cUdpSock::ErrMsgBox           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+エラーメッセージの表示をします。 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2e2fe996ab4d86b863ab0d30f0f7d703"></a><!-- doxytag: member="cUdpSock::_InitSock" ref="2e2fe996ab4d86b863ab0d30f0f7d703" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL cUdpSock::_InitSock           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ソケットの初期化を行います。 
+<p>
+<dl class="return" compact><dt><b>戻り値:</b></dt><dd>成功したときはTRUEを返す。 失敗したときはFALSEを返す。 </dd></dl>
+
+</div>
+</div><p>
+<hr><h2>変数</h2>
+<a class="anchor" name="43bbeadc9ebf13a0e2c13c1c31887834"></a><!-- doxytag: member="cUdpSock::m_Addr" ref="43bbeadc9ebf13a0e2c13c1c31887834" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKADDR_IN <a class="el" href="classc_udp_sock.html#43bbeadc9ebf13a0e2c13c1c31887834">cUdpSock::m_Addr</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ソケットのアドレス情報 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="d6629ca208cb71fafd408a009324285d"></a><!-- doxytag: member="cUdpSock::m_AddrPeer" ref="d6629ca208cb71fafd408a009324285d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKADDR_IN <a class="el" href="classc_udp_sock.html#d6629ca208cb71fafd408a009324285d">cUdpSock::m_AddrPeer</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+接続先ホストのアドレス情報 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a3d8516199551bd78546fe83292e5bc3"></a><!-- doxytag: member="cUdpSock::m_Socket" ref="a3d8516199551bd78546fe83292e5bc3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKET <a class="el" href="classc_udp_sock.html#a3d8516199551bd78546fe83292e5bc3">cUdpSock::m_Socket</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+ソケットハンドル 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="dc3a59810395f625ebd9cfc09cf26f7e"></a><!-- doxytag: member="cUdpSock::m_szErrMsg" ref="dc3a59810395f625ebd9cfc09cf26f7e" args="[2048]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="classc_udp_sock.html#dc3a59810395f625ebd9cfc09cf26f7e">cUdpSock::m_szErrMsg</a>[2048]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+エラーメッセージ 
+<p>
+
+</div>
+</div><p>
+<hr>このクラスの説明は次のファイルから生成されました:<ul>
+<li><a class="el" href="c_udp_sock_8h.html">cUdpSock.h</a><li><a class="el" href="c_udp_sock_8cpp.html">cUdpSock.cpp</a></ul>
+<hr size="1"><address style="align: right;"><small>cSockに対してThu Mar 1 18:22:34 2007に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.1-p1 </small></address>
+</body>
+</html>
